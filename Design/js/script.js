@@ -43,27 +43,27 @@ window.onscroll = () =>{
 
 }
 
-let toggleBtn = document.querySelector('#toggle-btn');
-let darkMode = localStorage.getItem('dark-mode');
+//let toggleBtn = document.querySelector('#toggle-btn');
+let darkMode = localStorage.getItem('dark');
 
 const enableDarkMode = () => {
-   toggleBtn.classList.replace('fa-sun', 'fa-moon');
+    document.querySelector('#toggle-btn').classList.replace('fa-sun', 'fa-moon');
    body.classList.add('dark');
-   localStorage.setItem('dark-mode', 'enabled');
+   localStorage.setItem('dark', 'enabled');
 }
 
 const disableDarkMode = () => {
-   toggleBtn.classList.replace('fa-moon', 'fa-sun');
+    document.querySelector('#toggle-btn').classList.replace('fa-moon', 'fa-sun');
    body.classList.remove('dark');
-   localStorage.setItem('dark-mode', 'disabled');
+   localStorage.setItem('dark', 'disabled');
 }
 
 if (darkMode === 'enabled') {
    enableDarkMode();
 }
 
-toggleBtn.onclick = (e) => {
-   let darkMode = localStorage.getItem('dark-mode');
+document.querySelector('#toggle-btn').onclick = (e) => {
+   let darkMode = localStorage.getItem('dark');
    if (darkMode === 'disabled') {
       enableDarkMode();
    } else {
