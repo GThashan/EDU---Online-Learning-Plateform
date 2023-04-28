@@ -37,14 +37,14 @@ if(isset($_COOKIE['user_id'])){
 
         <div class="row">
      
-           <div class="image">
-              <img src="images/About.png" alt="">
+           <div >
+              <img src="images/Aboutus.png" alt="">
            </div>
      
            <div class="content">
-              <h3>why choose us?</h3>
-              <p>we believe in providing quality education that is accessible to everyone, no matter where they are in the world. Our platform offers a wide range of courses that are designed to meet the needs of learners at all levels, whether you're a beginner or an advanced learner. </p>
-              <a href="courses.html" class="inline-btn">our courses</a>
+              <h3 style="text-align:left">why choose us?</h3>
+              <p style="text-align:left">we believe in providing quality education that is accessible to everyone, no matter where they are in the world.We offers a wide range of courses that are designed to meet the needs of learners at all levels, whether you're a beginner or an advanced learner. </p>
+              <a  href="courses.html" class="inline-btn" style="text-align:left">our courses</a>
            </div>
      
         </div>
@@ -75,14 +75,7 @@ if(isset($_COOKIE['user_id'])){
               </div>
            </div>
      
-           <div class="box">
-              <i class="fas fa-briefcase"></i>
-              <div>
-                 <h3>100%</h3>
-                 <span>job placement</span>
-              </div>
-           </div>
-     
+           
         </div>
      
      </section>
@@ -95,14 +88,30 @@ if(isset($_COOKIE['user_id'])){
         <div class="box-container">
      
            <div class="box">
-              <p>I really enjoyed this course and found it to be a great introduction to computer science. The instructor, John Smith, was knowledgeable and engaging, and presented the material in a clear and easy-to-understand way.</p>
+              <p>I have been using this  for a while now, and I think it's an amazing platform. The courses are challenging, and the professors are knowledgeable. I appreciate that the platform offers financial aid to those who cannot afford to pay for courses.</p>
               <div class="user">
-                 <img src="images/pic-1.jpg" alt="">
+                 <img src="images/pic-2.png" alt="">
                  <div>
-                    <h3>Minuri</h3>
+                    <h3>Dewa</h3>
                     <div class="stars">
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       
+                    </div>
+                 </div>
+              </div>
+           </div>
+     
+           <div class="box">
+              <p>I have to say that the platform is outstanding. The interface is easy to use, and the content is of high quality. I also appreciate that there is a community aspect to the platform, where you can interact with other learners from around the world.</p>
+              <div class="user">
+                 <img src="images/pic-4.png" alt="">
+                 <div>
+                    <h3>Nishalka</h3>
+                    <div class="stars">
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star-half-alt"></i>
@@ -112,51 +121,16 @@ if(isset($_COOKIE['user_id'])){
            </div>
      
            <div class="box">
-              <p>I had a wonderful experience with this e-learning platform and it provided me with a great introduction to various subjects. The instructors were highly knowledgeable and engaging, and they presented the material in a clear.</p>
+              <p>one of the best e-learning platforms out there. The courses are comprehensive, and the assessments are challenging. I like that the platform offers a mobile app, which makes it easy to access the content on-the-go.                                  </p>
               <div class="user">
-                 <img src="images/pic-1.jpg" alt="">
+                 <img src="images/pic-8.png" alt="">
                  <div>
-                    <h3>Minuri</h3>
+                    <h3>Virul</h3>
                     <div class="stars">
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star-half-alt"></i>
-                    </div>
-                 </div>
-              </div>
-           </div>
-     
-           <div class="box">
-              <p>The interactive learning tools helped me to retain the information better and the flexibility of the platform allowed me to learn at my own pace. Overall, I found this e-learning platform to be an excellent resource.</p>
-              <div class="user">
-                 <img src="images/pic-1.jpg" alt="">
-                 <div>
-                    <h3>Minuri</h3>
-                    <div class="stars">
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star-half-alt"></i>
-                    </div>
-                 </div>
-              </div>
-           </div>
-     
-           <div class="box">
-              <p>I really enjoyed this course and found it to be a great introduction to computer science. The instructor, John Smith, was knowledgeable and engaging, and presented the material in a clear and easy-to-understand way.</p>
-              <div class="user">
-                 <img src="images/pic-1.jpg" alt="">
-                 <div>
-                    <h3>Minuri</h3>
-                    <div class="stars">
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star-half-alt"></i>
+                       
                     </div>
                  </div>
               </div>
@@ -165,7 +139,7 @@ if(isset($_COOKIE['user_id'])){
            <div class="box">
               <p>I really enjoyed this course and found it to be a great introduction to computer science. The instructor, John Smith, was knowledgeable and engaging, and presented the material in a clear and easy-to-understand way.</p>
               <div class="user">
-                 <img src="images/pic-1.jpg" alt="">
+                 <img src="images/pic-1.png" alt="">
                  <div>
                     <h3>Minuri</h3>
                     <div class="stars">
@@ -180,17 +154,35 @@ if(isset($_COOKIE['user_id'])){
            </div>
      
            <div class="box">
-              <p>I really enjoyed this course and found it to be a great introduction to computer science. The instructor, John Smith, was knowledgeable and engaging, and presented the material in a clear and easy-to-understand way.</p>
+              <p>I have had a great experience with EDU.The platform is user-friendly. The feedback from peers and instructors is helpful in improving my skills, and the platform offers career services to help me prepare for the job market.</p>
               <div class="user">
-                 <img src="images/pic-1.jpg" alt="">
+                 <img src="images/pic-6.png" alt="">
                  <div>
-                    <h3>Minuri</h3>
+                    <h3>Imanya</h3>
                     <div class="stars">
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
-                       <i class="fas fa-star-half-alt"></i>
+                       
+                    </div>
+                 </div>
+              </div>
+           </div>
+     
+           <div class="box">
+              <p>I have to say that the platform is outstanding. The courses are challenging, and the assessments are helpful in reinforcing my understanding of the material.The platform also offers a credential program.                   </p>
+              <div class="user">
+                 <img src="images/pic-7.png" alt="">
+                 <div>
+                    <h3>Sohen</h3>
+                    <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+
                     </div>
                  </div>
               </div>
@@ -200,12 +192,7 @@ if(isset($_COOKIE['user_id'])){
      
      </section>
 
-
-
-<footer class="footer">
-    &copy; copyright @ 2023 by <span>Minuri Hewage</span> | all rights reserved!
-</footer>
-
+     <?php include 'components/footer.php'; ?>
 
 
     
