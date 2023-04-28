@@ -1,6 +1,6 @@
 <?php
 
-include '../Components/connect.php';
+include '../components/connect.php';
 
 if(isset($_POST['submit'])){
 

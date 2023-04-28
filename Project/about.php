@@ -1,3 +1,16 @@
+<?php
+
+include 'components/connect.php';
+
+if(isset($_COOKIE['user_id'])){
+   $user_id = $_COOKIE['user_id'];
+}else{
+   $user_id = '';
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,63 +27,7 @@
 
 <body>
 
-    <header class="header">
-        <section class="flex">
-
-            <a href="home.html" class="Logo">Web site logo</a>
-            <form action="" method="post" class="search-form">
-                <input type="text" name="search-box" placeholder="search courses...." required maxlength="100">
-                <button type="submit" class="fas fa-search" name="search_box"></button>
-            </form>
-
-            <div class="icons">
-
-                <div id="menu-btn" class="fas fa-bars"></div>
-                <div id="search-btn" class="fas fa-search"></div>
-                <div id="user-btn" class="fas fa-user"></div>
-                <div id="toggle-btn" class="fas fa-sun"></div>
-
-            </div>
-
-            <div class="profile">
-                <img src="images/pic-1.jpg" alt="">
-                <h3>Minuri Senara</h3>
-                <span>Student</span>
-                <a href="profile.html" class="btn">view profile</a>
-                <div class="flex-btn">
-                    <a href="login.html" class="option-btn">Login</a>
-                    <a href="Register.html" class="option-btn">Register</a>
-
-                </div>
-            </div>
-
-        </section>
-    </header>
-
-    <div class="side-bar">
-
-        <div id="close-side-bar">
-            <i class="fas fa-times"></i>
-        </div>
-
-        <div class="profile">
-            <img src="images/pic-1.jpg" alt="">
-            <h3>Minuri Senara</h3>
-            <span>Student</span>
-            <a href="profile.html" class="btn">view profile</a>
-
-        </div>
-        <nav class="navbar">
-            <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
-            <a href="about.html"><i class="fas fa-question"></i><span>about us</span></a>
-            <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
-            <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
-            <a href="contact.html"><i class="fas fa-heatset"></i><span>contact us</span></a>
-        </nav>
-
-    </div>
-
-
+   <?php include 'components/user_header.php'; ?>
 
     <section class="about">
 
