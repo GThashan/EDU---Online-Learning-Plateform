@@ -1,8 +1,21 @@
+<?php
+
+include 'components/connect.php';
+
+if(isset($_COOKIE['user_id'])){
+   $user_id = $_COOKIE['user_id'];
+}else{
+   $user_id = '';
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Complete Responsive Product Landing Page Website Design Tutorial</title>
 
     <!-- google fonts css file link  -->
@@ -46,7 +59,7 @@
     <div class="content">
         <h1>Unlock your potential now</h1>
         <p>Our platform is designed to be flexible, and affordable, so you can learn at your own pace and on your own terms. Join us today and unlock your potential!</p>
-        <a href="home.html"><button class="btn">start now</button></a>
+        <a href="home.php"><button class="btn"  >start now</button></a>
     </div>
 
     <div class="image">
@@ -132,17 +145,69 @@
 
 <section class="contact" id="contact">
 
-<form action="">
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-    <input class="box" type="text" placeholder="name">
-    <input class="box" type="email" placeholder="your email">
-    <input class="box" type="number" placeholder="your number">
+require './PHPMailer/src/Exception.php';
+require './PHPMailer/src/PHPMailer.php';
+require './PHPMailer/src/SMTP.php';
 
-    <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+if(isset($_POST['send'])){
+    $name = htmlentities($_POST['name']);
+    $email = htmlentities($_POST['email']);
+    $subject = htmlentities($_POST['subject']);
+    $message = htmlentities($_POST['message']);
 
-    <input type="submit" class="btn" value="send message">
+    $mail = new PHPMailer(true);
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'minurisenara@gmail.com';
+    $mail->Password = 'ojbfzeibomwakltb';
+    $mail->Port = 465;
+    $mail->SMTPSecure = 'ssl';
+    $mail->isHTML(true);
+    $mail->setFrom($email, $name);
+    $mail->addAddress('minurisenara@gmail.com');
+    $mail->Subject = ("$email ($subject)");
+    $mail->Body = $message;
+
+    
+
+    if ($mail->send()) {
+        ?>
+        
+        <script>
+            swal({
+                title: "Success!",
+                text: "Message sent successfully.",
+                icon: "success",
+            });
+            
+        </script>
+        <?php
+    }
+}
+?>
+
+
+
+<form  method="POST" >
+
+    <input class="box" type="text" name="name" placeholder="Name">
+    <input class="box" type="email" name="email" placeholder="Your Email">
+    <input class="box" type="text" name="subject" placeholder="subject">
+
+    <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+
+    <input type="submit" class="btn" value="Send Message" name="send">
+    
 
 </form>
+
+
+
 
 <div class="content">
 
